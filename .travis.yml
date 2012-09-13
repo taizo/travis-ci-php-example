@@ -28,5 +28,10 @@ before_script:
 script: phpunit --configuration phpunit_$DB.xml --coverage-text
 
 # configure notifications (email, IRC, campfire etc)
+#notifications:
+#  irc: "irc.freenode.org#travis"
 notifications:
-  irc: "irc.freenode.org#travis"
+  email:
+    recipients:
+      - taizo.ito@hde.co.jp
+      - taizoster@gmail.com
